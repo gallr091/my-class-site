@@ -1,0 +1,121 @@
+/* Version 1: Poster Shape */
+
+body {
+
+.container {
+    background: black;
+    position: relative;
+    width: 500px;
+    
+  /*   I want my height to be a total of 700px, but there's a 20px padding all around, so I'm giving it a height of 660px (700 - 20 - 20) */
+    height: 660px; 
+    padding: 20px;
+    
+  /*   This makes it horizontally centered */
+  /*   It only works on "display:block" elements */
+    margin: auto;
+    
+  /*   This makes it centered vertically */
+  /*   It's 50% of the height, and subtracting half of the total height of the poster (which is 700px)'*/  
+    margin-top: calc(50vh - 350px);
+
+    .info {
+      width: auto;
+      display: flex;
+      line-height: 120%;
+      letter-spacing: 0.1px;
+      font-size: 11px;
+      word-spacing: 1px;
+      padding: 10px 30px;
+      margin-top: 20px;
+      border-top: 2px;
+      border-bottom: 2px;
+    }
+    
+    .place {
+      width: 140px;
+      font-family:'Martian Mono', monospace;
+      color:red;
+    }
+    
+    .guests {
+      width: 170px;
+      font-family:'Martian Mono', monospace;
+      color:red;
+    }
+    
+    .date {
+      font-family:'Martian Mono', monospace;
+      color:red;
+    }
+
+  .marceline{
+    font-family: 'UnifrakturCook', cursive;
+    color:red;
+    font-size: 150px;
+    line-height:5px;
+    transform: rotate(-90deg);
+    position:absolute;
+    right: 200px;
+    bottom:210px;
+    }
+  
+  .subheader{
+    font-family: 'UnifrakturCook', cursive;
+    color:red;
+    font-size:30px;
+    word-spacing:40px;
+    position:absolute;
+    line-height:5px;
+    left:180px;
+    bottom:260px;
+  }
+  .image1{
+    position:absolute;
+    left:145px;
+    top:100px;
+  }
+
+  .image2{
+    position:absolute;
+    left:145px;
+    top:450px;
+  }
+
+  .uglyimage{
+    display:none;
+  }
+
+  .moon01{
+    position:absolute;
+    top:323px;
+    left:240px;
+    background-color: red;
+    height: 27px;
+    border-radius:50%;
+    width: 27px;
+  }
+
+  .moon02 {
+    position:absolute;
+    top:315px;
+    left:290px;
+    width: 30px;
+    height: 30px;
+    border-radius: 90%;
+    box-shadow: 5px 5px 0 0 red;
+  }
+
+  .moon03 {
+    position:absolute;
+    top:320px;
+    left:355px;
+    border: 2px solid red;
+    background-color: black;
+    height: 27px;
+    border-radius:50%;
+    width: 27px;
+  }
+
+  }
+}

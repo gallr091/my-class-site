@@ -1,0 +1,84 @@
+/* Version 3: Ugly */
+body{
+    background-image: url("moon.jpeg")
+}
+
+.info{
+    width: auto;
+    display: flex;
+    line-height: 120%;
+    letter-spacing: 0.1px;
+    font-size: 20px;
+    word-spacing: 1px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-top: 2px;
+    border-bottom: 2px;
+  }
+
+.place{
+    font-family: "grindelgrove", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 270px;
+    text-align:center;
+    position:relative;
+    top:50px;
+    text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+  }
+
+.guests {
+    width: 400px;
+    font-family: "grindelgrove", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align:center;
+    position:relative;
+    top:200px;
+    right:400px;
+    text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+
+  }
+  
+  .date {
+    font-family: "grindelgrove", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align:center;
+    position:relative;
+    top:350px;
+    right:600px;
+    text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+  }
+
+  .marceline{
+    font-family: "grindelgrove", sans-serif;
+    color:red;
+    font-size: 150px;
+    line-height:5px;
+    position:relative;
+    right:0px;
+    left:530px;
+    bottom:700px;
+    text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+    }
+  
+  .subheader{
+    font-family: "grindelgrove", sans-serif;
+    color:red;
+    font-size:60px;
+    word-spacing:20px;
+    position:relative;
+    line-height:5px;
+    left:560px;
+    bottom:390px;
+    text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+    }
+
+.image1{
+    display:none;
+   }
+ 
+.image2{
+     display:none;
+   }
