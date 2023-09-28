@@ -1,0 +1,253 @@
+body {
+  background-repeat: no-repeat;
+  background: linear-gradient(90deg, rgba(68,16,16,1) 0%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(68,16,16,1) 100%);
+
+    .container {
+        background: black;
+        border:5px solid red;
+        border-style: dashed double dashed;
+        position: relative;
+        width: 500px;
+        height: 660px; 
+        padding: 20px;
+        margin: auto;
+        margin-top: calc(50vh - 350px);
+        transition: .5s;
+        transform: scale(.9);
+  
+  /* DETAILS */
+        .info{
+          width: auto;
+          display: flex;
+          line-height: 120%;
+          letter-spacing: 0.1px;
+          font-size: 11px;
+          word-spacing: 1px;
+          padding: 10px 30px;
+          margin-top: 20px;
+          border-top: 2px;
+          border-bottom: 2px;
+        }
+        
+        .place{
+          width: 140px;
+          font-family:'Martian Mono', monospace;
+          color:red;
+          box-shadow: inset 0 0 0 0 red;
+          padding: 0 .25rem;
+          margin: 0 -.25rem;
+          transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+        }
+
+        .place:hover{
+          color: black;
+          box-shadow: inset 115px 0 0 0 red;
+        }
+        
+        .guests{
+          width: 170px;
+          font-family:'Martian Mono', monospace;
+          color:red;
+          box-shadow: inset 0 0 0 0 red;
+          padding: 0 .25rem;
+          margin: 0 -.25rem;
+          transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+        }
+
+        .guests:hover{
+          color: black;
+          box-shadow: inset 155px 0 0 0 red;
+        }
+
+        .date{
+          font-family:'Martian Mono', monospace;
+          color:red;
+          box-shadow: inset 0 0 0 0 red;
+          padding: 0 .25rem;
+          margin: 0 -.25rem;
+          transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+        }
+
+        .date:hover{
+          color: black;
+          box-shadow: inset 150px 0 0 0 red;
+        }
+
+  /* MAIN TEXT */
+      .marceline{
+        font-family: 'UnifrakturCook', cursive;
+        color:red;
+        font-size: 150px;
+        line-height:5px;
+        transform: rotate(-90deg);
+        position:absolute;
+        right: 200px;
+        bottom:210px;
+        transition:300ms;
+        opacity:1;
+        transition: opacity .25s ease-in-out;
+        -moz-transition: opacity .25s ease-in-out;
+        -webkit-transition: opacity .25s ease-in-out;
+      }
+
+      .marceline2{
+        font-family: "devils-haircut", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 150px;
+        letter-spacing:15px;
+        color:red;
+        transform: rotate(-90deg);
+        position:absolute;
+        right: 200px;
+        bottom:140px;
+        padding-right:20px;
+        padding-top:45px;
+        opacity:0;
+        transition: opacity .25s ease-in-out;
+        -moz-transition: opacity .25s ease-in-out;
+        -webkit-transition: opacity .25s ease-in-out;
+      }
+
+      .main-text:hover .marceline2{
+        opacity:1;
+      }
+
+      .main-text:hover .marceline{
+        opacity:0;
+      }
+
+      .subheader1{
+        font-family: 'UnifrakturCook', cursive;
+        color:red;
+        font-size:30px;
+        word-spacing:40px;
+        position:absolute;
+        line-height:5px;
+        left:180px;
+        bottom:260px;
+        transition:300ms;
+        opacity:1;
+        transition: opacity .25s ease-in-out;
+        -moz-transition: opacity .25s ease-in-out;
+        -webkit-transition: opacity .25s ease-in-out;
+      }
+
+      .subheader2{
+        color:red;
+        font-family: "devils-haircut", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 40px;
+        word-spacing:40px;
+        position:absolute;
+        position:absolute;
+        line-height:5px;
+        left:175px;
+        bottom:250px;
+        transition:300ms;
+        opacity:0;
+        transition: opacity .25s ease-in-out;
+        -moz-transition: opacity .25s ease-in-out;
+        -webkit-transition: opacity .25s ease-in-out;
+      }
+
+    .subheader:hover .subheader2{
+        opacity:1;
+    }
+    
+    .subheader:hover .subheader1{
+      opacity:0;
+    }
+
+  /* IMAGES */
+      .image1{
+        position:absolute;
+        left:145px;
+        top:100px;
+        display:block;
+      }
+
+      .image1:hover{
+        width:350px;
+        height:197px;
+        content:url("marcy2.png");
+      }
+    
+      .image2{
+        position:absolute;
+        left:145px;
+        top:450px;
+        display:block;
+      }
+
+      .image2:hover{
+        width:350px;
+        height:197px;
+        content:url("marcy1.png");
+      }
+
+/* MOONS */
+      .stars{
+        color:red;
+        position:absolute;
+        top:355px;
+        left:205px;
+        margin:10px;
+      }
+      .moon01{
+        position:absolute;
+        top:323px;
+        left:240px;
+        background-color: red;
+        height: 27px;
+        border-radius:50%;
+        width: 27px;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .moon01:hover{
+        color: rgba(255, 255, 255, 1);
+        box-shadow:0 0 30px 10px red;      
+      }
+    
+      .moon02 {
+        position:absolute;
+        top:315px;
+        left:290px;
+        width: 30px;
+        height: 30px;
+        border-radius: 90%;
+        box-shadow: 5px 5px 0 0 red;
+        transition: transform .7s ease-in-out;
+      }
+
+      .moon02:hover{
+        transform: rotate(360deg);
+      }
+    
+      .moon03 {
+        position:absolute;
+        top:320px;
+        left:355px;
+        border: 2px solid red;
+        background-color: black;
+        height: 27px;
+        border-radius:50%;
+        width: 27px;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .moon03:hover{
+        color: rgba(255, 255, 255, 1);
+        border: 2px solid black;
+        box-shadow:0 0 30px 10px red;      
+      }
+    
+      }
+    }
+  
+  .container:hover{
+    transform: scale(1.0);
+    box-shadow: 0 0 30px 10px #6b1717;
+  }
