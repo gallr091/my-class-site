@@ -93,15 +93,18 @@ body{
     bottom:65px;
     left:40px;
   }
+
+
+/* FOLDERS */
+
+  .folder-e1a:hover, .folder-e1b:hover, .folder-e2:hover, .folder-p1a:hover{
+    cursor:ne-resize;
+  }
   
   .folder-e1a{
     position:absolute;
     left:600px;
     top:120px;
-  }
-
-  .folder-e1a:hover{
-    cursor:pointer;
   }
 
   .folder-e1b{
