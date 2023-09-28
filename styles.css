@@ -97,7 +97,7 @@ body{
 
 /* FOLDERS */
 
-  .folder-e1a:hover, .folder-e1b:hover, .folder-e2:hover, .folder-p1a:hover{
+  .folder-e1a:hover, .folder-e1b:hover, .folder-e2:hover, .folder-p1a:hover, .folder-p1b:hover{
     cursor:ne-resize;
   }
   
@@ -126,5 +126,15 @@ body{
   }
 
   .folder-p1a-caption{
+    padding-left:15px;
+  }
+
+  .folder-p1b{
+    position:absolute;
+    left:650px;
+    top:500px;
+  }
+
+  .folder-p1b-caption{
     padding-left:15px;
   }
