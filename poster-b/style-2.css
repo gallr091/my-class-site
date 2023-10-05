@@ -1,0 +1,608 @@
+body {
+    background-repeat: no-repeat;
+    background: rgb(247,89,186);
+    background: linear-gradient(90deg, rgba(247,89,186,1) 0%, rgba(255,221,240,1) 20%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 65%, rgba(255,221,240,1) 80%, rgba(247,89,186,1) 100%);
+}
+  
+    .container {
+          background: white;
+          border:5px solid #f759ba;
+          border-style: dotted;
+          position: relative;
+          width: 500px;
+          height: 660px; 
+          padding: 20px;
+          margin: auto;
+          margin-top: calc(50vh - 350px);
+          position:relative;
+          transition: .5s;
+          transform: scale(.9);
+    }
+
+    .container:hover{
+      transform: scale(1.0);
+      box-shadow: 0 0 30px 10px #f759ba;
+    }
+
+    /* BORDER */
+        .arch-bottom{
+            width:500px;
+            height:400px;
+            background-color:transparent;
+            border:2px solid #f759ba;
+            border-top-color:transparent;
+            position:absolute;
+            top:280px;
+        }
+
+        .arch-top{
+            width:500px;
+            border:2px solid #f759ba;
+            background-color:transparent;
+            height:330px;
+            position:absolute;
+            border:2px solid #f759ba;
+            border-bottom-color:transparent;
+            border-top-left-radius:500px;
+            border-top-right-radius:500px;
+        }
+
+
+    /* HEART */
+    #wrapper {
+      position: absolute;
+      margin-left: 10px;
+      margin-top: 10px;
+      top:25px;
+      left:calc(50% - 30px);
+    }
+    
+    #wrapper:hover{
+      animation:pulse 1s infinite;
+    }
+    
+    #pulsingheart { 
+      position: relative; 
+      width: 20px; 
+      height: 20px;
+    } 
+    
+    #pulsingheart:before, #pulsingheart:after { 
+      position: absolute; 
+      content: ""; 
+      left: 22px; 
+      top: 0; 
+      width: 22px; 
+      height: 34px; 
+      background: #f759ba; 
+      border-radius: 20px 20px 0 0; 
+      transform: rotate(-45deg);  
+      transform-origin: 0 100%;
+    } 
+    
+    #pulsingheart:after { 
+      left: 0; 
+      transform: rotate(45deg); 
+      transform-origin :100% 100%;
+    }
+    
+    @keyframes pulse {
+      10% {transform: scale(1.1)}
+    }
+  
+
+
+    /* #heart {
+      background-color: #f759ba;
+      display: inline-block;
+      height: 20px;
+      margin: 0 10px;
+      position: relative;
+      top: 0;
+      transform: rotate(-45deg);
+      width: 20px;
+      position:absolute;
+      top:40px;
+      left:calc(50% - 20px/2);
+    }
+    
+    #heart:before,
+    #heart:after {
+      content: "";
+      background-color: #f759ba;
+      border-radius: 50%;
+      height: 20px;
+      position: absolute;
+      width: 20px;
+    }
+    
+    #heart:before {
+      top: -10px;
+      left: 0;
+    }
+    
+    #heart:after {
+      left: 10px;
+      top: 0;
+    } */
+
+    /* IMAGES */
+        .image{
+            position: absolute;
+            top:155px;
+            left:calc(50% - 307px/2);
+            z-index: 1;
+        }
+
+        .image:hover{
+          content:url("marcy-arch2.png");
+        }
+      
+
+    /* NAME TEXT */
+        .m{
+            font-family: "eckmannpsych-medium", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size:80px;
+            color:#f759ba;
+            position: absolute;
+            top:135px;
+            left:70px;
+            transform:rotate(-50deg);
+        }
+
+        .a{
+            font-family: "eckmannpsych-medium", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size:80px;
+            color:#f759ba;
+            position: absolute;
+            top:95px;
+            left:127px;
+            transform:rotate(-35deg);
+        }
+
+        .r{
+            font-family: "eckmannpsych-medium", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size:80px;
+            color:#f759ba;
+            position: absolute;
+            top:70px;
+            left:170px;
+            transform:rotate(-25deg);
+        }
+
+        .c{
+            font-family: "eckmannpsych-medium", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size:80px;
+            color:#f759ba;
+            position: absolute;
+            top:57px;
+            left:220px;
+            transform:rotate(-10deg);
+        }
+
+        .e1{
+            font-family: "eckmannpsych-medium", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size:80px;
+            color:#f759ba;
+            position: absolute;
+            top:57px;
+            left:265px;
+            transform:rotate(5deg);
+        }
+
+        .l{
+            font-family: "eckmannpsych-medium", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size:80px;
+            color:#f759ba;
+            position: absolute;
+            top:65px;
+            left:310px;
+            transform:rotate(15deg);
+        }
+
+        .i{
+            font-family: "eckmannpsych-medium", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size:80px;
+            color:#f759ba;
+            position: absolute;
+            top:80px;
+            left:357px;
+            transform:rotate(25deg);
+        }
+
+        .n{
+            font-family: "eckmannpsych-medium", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size:80px;
+            color:#f759ba;
+            position: absolute;
+            top:110px;
+            left:385px;
+            transform:rotate(50deg);
+        }
+
+        .e2 {
+            font-family: "eckmannpsych-medium", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size:80px;
+            color:#f759ba;
+            position: absolute;
+            top:150px;
+            left:415px;
+            transform:rotate(70deg);
+        }
+
+        .marceline span:hover {
+          cursor: pointer;
+        }
+        
+        .marceline span:nth-child(1):hover {
+          font-family: "salbabida-sans-pro", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          left:80px;
+          top:125px;
+        }
+        
+        .marceline span:nth-child(2):hover {
+          font-family: "salbabida-sans-pro", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          left:130px;
+          top:92px;
+        }
+        
+        .marceline span:nth-child(3):hover {
+          font-family: "salbabida-sans-pro", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          left:172px;
+        }
+        
+        .marceline span:nth-child(4):hover {
+          font-family: "salbabida-sans-pro", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+        }
+        
+        .marceline span:nth-child(5):hover {
+          font-family: "salbabida-sans-pro", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+        }
+        
+        .marceline span:nth-child(6):hover {
+          font-family: "salbabida-sans-pro", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+        }
+        
+        .marceline span:nth-child(7):hover {
+          font-family: "salbabida-sans-pro", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+        }
+        
+        .marceline span:nth-child(8):hover {
+          font-family: "salbabida-sans-pro", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          left:380px;
+        }
+        
+        .marceline span:nth-child(9):hover {
+          font-family: "salbabida-sans-pro", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+        }
+
+    /* CANDY LEFT */
+    .candy1{
+      transform:rotate(-45deg);
+      position:absolute;
+      top:85px;
+      left:5px;
+    }
+  
+    .triangle-right1 {
+      width: 0;
+      height: 0;
+      border-top: 25px solid transparent;
+      border-left: 50px solid #f759ba;
+      border-bottom: 25px solid transparent;
+      position:absolute;
+      top:5px;
+  
+        }
+    
+    .circle1{
+      width: 55px;
+      height: 55px;
+      background: #f759ba;
+      border-radius: 50%;
+      position:absolute;
+      left:27px;
+      top:3px;
+      border:2px solid white;
+    }
+    
+     .triangle-left1 {
+       width: 0;
+       height: 0;
+       border-top: 25px solid transparent;
+       border-right: 50px solid #f759ba;
+       border-bottom: 25px solid transparent;
+       position:absolute;
+       left:65px;
+       top:10px;
+        }
+
+    .candy1:hover{
+      animation: wobble1 0.5s;
+    }
+
+    @keyframes wobble1{
+        from, to { transform: scale(1, 1); 
+          transform:rotate(-40deg);}
+        25% { transform: scale(0.7, 1.1);
+          transform:rotate(-45deg); }
+        50% { transform: scale(1.1, 0.7); 
+          transform:rotate(-50deg);}
+        75% { transform: scale(0.80, 1.10);
+          transform:rotate(-45deg); }
+        90% { transform: scale(1.01, 0.7);
+            transform:rotate(-50deg); }
+      }
+    
+    /* CANDY RIGHT */
+      .candy2{
+        transform:rotate(45deg);
+        position:absolute;
+        top:5px;
+        left:455px;
+      }
+    
+      .triangle-right2 {
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-left: 50px solid #f759ba;
+        border-bottom: 25px solid transparent;
+        position:absolute;
+        top:5px;
+    
+          }
+      
+      .circle2{
+        width: 55px;
+        height: 55px;
+        background: #f759ba;
+        border-radius: 50%;
+        position:absolute;
+        left:27px;
+        top:0px;
+        border:2px solid white;
+      }
+      
+       .triangle-left2{
+         width: 0;
+         height: 0;
+         border-top: 25px solid transparent;
+         border-right: 50px solid #f759ba;
+         border-bottom: 25px solid transparent;
+         position:absolute;
+         left:65px;
+         top:10px;
+          }
+
+    .subheader {
+      font-family: 'Pinyon Script', cursive;
+      font-weight: 400;
+      font-style: normal;
+      color:#f759ba;
+      word-spacing: 10px; 
+      position:absolute;
+      left:170px;      
+      top:445px;
+      }
+
+    .candy2:hover{
+      animation:wobble2 0.5s;
+      cursor:pointer;
+    }
+
+    @keyframes wobble2{
+      from, to { transform: scale(1, 1); 
+        transform:rotate(50deg);}
+      25% { transform: scale(0.7, 1.1);
+        transform:rotate(45deg); }
+      50% { transform: scale(1.1, 0.7); 
+        transform:rotate(40deg);}
+      75% { transform: scale(0.80, 1.10);
+        transform:rotate(45deg); }
+      90% { transform: scale(1.1, 0.7);
+          transform:rotate(40deg); }
+    }
+
+
+
+  /* DETAILS */
+    .place1{
+      font-family: 'Pinyon Script', cursive;
+      font-weight: 400;
+      font-style: normal;
+      color:#f759ba;
+      position:absolute;
+      font-size:20px;
+      top:490px;
+      left:40px;
+    }
+
+    .place2{
+      font-family: "salbabida-sans-pro", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      color:#f759ba;
+      position:absolute;
+      top:495px;
+      left:40px;
+      font-size:30px;
+    }
+
+    .place2:hover{
+      animation: bounce 1s;
+      cursor:pointer;
+    }
+
+    .guest1{
+      font-family: 'Pinyon Script', cursive;
+      font-weight: 400;
+      font-style: normal;
+      color:#f759ba;
+      position:absolute;
+      font-size:20px;
+      top:540px;
+      right:40px;
+    }
+
+    .guest2{
+      font-family: "salbabida-sans-pro", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      color:#f759ba;
+      position:absolute;
+      top:545px;
+      right:40px;
+      font-size:30px;
+    }
+
+    .guest2:hover{
+      animation: bounce 1s;
+      cursor:pointer;
+    }
+
+    .date1{
+      font-family: 'Pinyon Script', cursive;
+      font-weight: 400;
+      font-style: normal;
+      color:#f759ba;
+      position:absolute;
+      font-size:20px;
+      top:590px;
+      left:40px;
+    }
+
+    .date2{
+      font-family: "salbabida-sans-pro", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      color:#f759ba;
+      position:absolute;
+      top:595px;
+      left:40px;
+      font-size:30px;
+    }
+
+    .date2:hover{
+      animation: bounce 1s;
+      cursor:pointer;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+      40% {transform: translateY(-15px);} 
+      60% {transform: translateY(-8px);} 
+    }
+
+    .border1{
+      color:#f759ba;
+      position:absolute;
+      top:517px;
+      left:250px;
+    }
+
+    .border2{
+      color:#f759ba;
+      position:absolute;
+      top:567px;
+      left:45px;
+    }
+
+    .border3{
+      color:#f759ba;
+      position:absolute;
+      top:617px;
+      left:255px;
+    }
+
+    /* PEPPERMINT */
+    .peppermint1 div{
+      height: 30px;
+      width: 30px;
+      margin-bottom: 25px;
+      background: white;
+      border: 5px dashed #f759ba;
+      border-radius: 50%;
+      position:relative;
+      left:30px;
+      top:240px;
+    }
+
+    .peppermint1 div:hover{
+        animation: spin 4s infinite;
+        cursor:pointer;
+    }
+      
+
+    .peppermint2 div{
+      height: 30px;
+      width: 30px;
+      margin-bottom: 25px;
+      background: white;
+      border: 5px dashed #f759ba;
+      border-radius: 50%;
+      position:relative;
+      left:420px;
+      top:45px;
+    }
+
+    .peppermint2 div:hover{
+      animation: spin 4s infinite;
+      cursor:pointer;
+  }
+
+    @keyframes spin { 
+      100% {
+        transform: rotate(360deg);
+        animation-timing-function: ease-in;
+      }
+    }
+        
+
+
+        
+
+
+
+
+
+
+
+      
+    
