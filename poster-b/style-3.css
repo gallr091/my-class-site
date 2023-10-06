@@ -73,7 +73,7 @@ body {
     z-index:1;
     position:absolute;
     margin:auto;
-    top:5px;
+    top:10px;
     left:10px;
   }
 
@@ -176,7 +176,7 @@ body {
     z-index:1;
     position:absolute;
     margin:auto;
-    top:5px;
+    top:10px;
     left:20px;
   }
 
@@ -278,7 +278,7 @@ body {
     z-index:1;
     position:absolute;
     margin:auto;
-    top:5px;
+    top:10px;
     left:30px;
   }
 
@@ -506,25 +506,3 @@ body {
           background-color:#fae300;
           cursor:pointer;
         }
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
