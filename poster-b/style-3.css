@@ -1,0 +1,530 @@
+body {
+    background-repeat: no-repeat;
+    background: rgb(67,168,153);
+    background: linear-gradient(90deg, rgba(67,168,153,1) 0%, rgba(143,236,191,1) 10%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 80%, rgba(143,236,191,1) 90%, rgba(67,168,153,1) 100%);
+}
+
+ .container {
+    background: #43a899;
+    border:5px dashed white;
+    border-style: double;
+    position: relative;
+    width: 500px;
+    height: 660px; 
+    padding: 20px;
+    margin: auto;
+    margin-top: calc(50vh - 350px);
+    position:relative;
+    transition: .5s;
+    transform: scale(.9);
+ }
+
+ .container:hover{
+  transform: scale(1.0);
+  box-shadow: 0 0 30px 10px rgb(67,168,153);
+}
+
+/* MAIN */
+  .marceline {
+    position:absolute;
+    font-family: "brea-variable", sans-serif;
+    font-variation-settings: "wght" 100;
+    color:white;
+    font-size:100px;
+    top:-60px;
+  }
+
+  .pic{
+    position:absolute;
+    top:100px;
+  }
+
+  .subheader{
+    position:absolute;
+    font-family: "brea-variable", sans-serif;
+    font-variation-settings: "wght" 100;
+    color:white;
+    top:350px;
+    font-size:35px;
+  }
+
+/* INFO */
+
+/*!--place--!*/
+  .place{
+    background-color:white;
+    width: 150px;
+    height: 45px;
+    border-radius:15px;
+    position:absolute;
+    top:480px;
+    transform: translate(0,-50%);
+    padding:10px;
+
+  }
+
+  .place-text{
+    font-family: "bd-geminis", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#43a899;
+    font-size:50px;
+    text-align:center;
+    z-index:1;
+    position:absolute;
+    margin:auto;
+    top:5px;
+    left:10px;
+  }
+
+  .place-screen{
+    background-color:white;
+    height:273px;
+    opacity:0;
+    width:500px;
+    position:absolute;
+    top:100px;
+    left:20px;
+  }
+
+  .pdetails1{
+    font-family: "lores-12", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top:270px;
+    left:30px;
+    z-index:3;
+    color:#43a899;
+    display:none;
+  }
+
+  .pdetails2{
+    font-family: "bd-geminis", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#43a899;
+    font-size:50px;
+    top:255px;
+    left:30px;
+    position:absolute;
+    z-index:4;
+    display:none;
+  }
+
+  .place:hover{
+    background-color:transparent;
+    border:white solid 2px;
+    cursor:pointer;
+  }
+
+  .place:hover .place-text{
+    color:white;
+  }
+
+  .place:hover ~.place-screen{
+    opacity:0.8;
+  }
+
+  .place:hover ~.pdetails1{
+    display: inline-block;
+    z-index:4;
+    color:#43a899;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap;
+    animation: typing 3.5s steps(40, end), mblink-caret .75s step-end infinite;
+  }
+  
+  .place:hover ~.pdetails2{
+    width:100px;
+    display: inline-block;
+    z-index:4;
+    color:#43a899;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap;
+    
+    animation: typing 3.5s steps(50, end);
+  }
+
+ /* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+  
+  /*!--guest--!*/
+
+  .guest{
+    background-color:white;
+    width: 150px;
+    height: 45px;
+    border-radius:15px;
+    position:absolute;
+    top:555px;
+    transform: translate(0,-50%);
+    padding:10px;
+
+  }
+
+  .guest-text{
+    font-family: "bd-geminis", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#43a899;
+    font-size:50px;
+    text-align:center;
+    z-index:1;
+    position:absolute;
+    margin:auto;
+    top:5px;
+    left:20px;
+  }
+
+  .guest-screen{
+    background-color:white;
+    height:273px;
+    opacity:0;
+    width:500px;
+    position:absolute;
+    top:100px;
+    left:20px;
+  }
+  
+  .gdetails1{
+    font-family: "lores-12", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top:270px;
+    left:30px;
+    z-index:3;
+    color:#43a899;
+    display:none;
+  }
+
+  .gdetails2{
+    font-family: "bd-geminis", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#43a899;
+    font-size:50px;
+    top:255px;
+    left:30px;
+    position:absolute;
+    z-index:4;
+    display:none;
+  }
+
+  .guest:hover{
+    background-color:transparent;
+    border:white solid 2px;
+    cursor:pointer;
+  }
+
+  .guest:hover .guest-text{
+    color:white;
+  }
+
+  .guest:hover ~.guest-screen{
+    opacity:0.8;
+  }
+
+  .guest:hover ~.gdetails1{
+    display: inline-block;
+    z-index:4;
+    color:#43a899;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap;
+    animation: typing 3.5s steps(40, end), mblink-caret .75s step-end infinite;
+  }
+  
+  .guest:hover ~.gdetails2{
+    width:100px;
+    display: inline-block;
+    z-index:4;
+    color:#43a899;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap;
+    
+    animation: typing 3.5s steps(50, end);
+  }
+
+ /* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+  /*!--date--!*/
+  .date{
+    background-color:white;
+    width: 150px;
+    height: 45px;
+    border-radius:15px;
+    position:absolute;
+    top:630px;
+    transform: translate(0,-50%);
+    padding:10px;
+
+  }
+
+  .date-text{
+    font-family: "bd-geminis", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#43a899;
+    font-size:50px;
+    text-align:center;
+    z-index:1;
+    position:absolute;
+    margin:auto;
+    top:5px;
+    left:30px;
+  }
+
+  .date-screen{
+    background-color:white;
+    height:273px;
+    opacity:0;
+    width:500px;
+    position:absolute;
+    top:100px;
+    left:20px;
+  }
+  
+  .ddetails1{
+    font-family: "lores-12", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top:270px;
+    left:30px;
+    z-index:3;
+    color:#43a899;
+    display:none;
+  }
+
+  .ddetails2{
+    font-family: "bd-geminis", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#43a899;
+    font-size:50px;
+    top:255px;
+    left:30px;
+    position:absolute;
+    z-index:4;
+    display:none;
+  }
+
+  .date:hover{
+    background-color:transparent;
+    border:white solid 2px;
+    cursor:pointer;
+  }
+
+  .date:hover .date-text{
+    color:white;
+  }
+
+  .date:hover ~.date-screen{
+    opacity:0.8;
+  }
+
+  .date:hover ~.ddetails1{
+    display: inline-block;
+    z-index:4;
+    color:#43a899;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap;
+    animation: typing 3.5s steps(40, end), mblink-caret .75s step-end infinite;
+  }
+  
+  .date:hover ~.ddetails2{
+    width:100px;
+    display: inline-block;
+    z-index:4;
+    color:#43a899;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap;
+    
+    animation: typing 3.5s steps(50, end);
+  }
+
+ /* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+/* BUTTONS */
+.buttons{
+    position:absolute;
+    top:450px;
+    padding:10px 1px;
+    left:210px;
+    background-color: transparent;
+    width:300px;
+    height:190px;
+    z-index:1; 
+}
+
+    .top{
+        position: absolute;
+        width: 230px;
+        height:15px;
+        border-radius:5px;
+        background-color:white;
+    }
+
+    .top:hover{
+      background-color:#1d353a;
+      transition-property:ease-in;
+      cursor:pointer;
+    }
+
+    .top-circle{
+        position: absolute;
+        width:25px;
+        height:25px;
+        border-radius:15px;
+        background-color: white;
+        left:260px;
+        top:5px;
+    }
+
+    .top-circle:hover{
+      background-color:#0e1a52;
+      transition-property:ease-in;
+      cursor:pointer;
+    }
+
+    .triangle{
+        width:0;
+        height:0;
+        border-left:25px solid transparent;
+        border-right:25px solid transparent;  
+        border-bottom:40px solid white; 
+        top: 70px;
+        left: 180px;
+        position: absolute;
+          }
+    
+    .triangle:hover{
+      border-bottom:40px solid #1b8bc2; 
+      transition-property:ease-in;
+      cursor:pointer;
+    }
+    
+    .circle1{
+        width:30px;
+        height:30px;
+        border-radius:15px;
+        background-color:white;
+        position:absolute;
+        top:80px;
+        left:250px;
+    }
+
+    .circle1:hover{
+      background-color:#3e9b00;
+      transition-property:ease-in;
+      cursor:pointer;
+    }
+
+    .circle2{
+        width:60px;
+        height:60px;
+        border-radius:50px;
+        background-color:white;
+        position:absolute;
+        top:125px;
+        left:200px;
+    }
+
+    .circle2:hover{
+      background-color:#bb1621;
+      transition-property:ease-in;
+      cursor:pointer;
+    }
+
+    .bottom1{
+        position: absolute;
+        width:70px;
+        height:15px;
+        border-radius:5px;
+        background-color:white;
+        position:absolute;
+        top:180px;
+    }
+
+    .bottom1:hover{
+      background-color:#1a1e69;
+      transition-property:ease-in;
+      cursor:pointer;
+    }
+
+    .bottom2{
+        position: absolute;
+        width:70px;
+        height:15px;
+        border-radius:5px;
+        background-color:white;
+        position:absolute;
+        top:180px;
+        left:80px;
+    }
+
+    .bottom2:hover{
+      background-color:#1a1e69;
+      transition-property:ease-in;
+      cursor:pointer;
+    }
+
+
+    /*--dpad--*/
+        .vertical{
+            position:absolute;
+            background-color:white;
+            width:40px;
+            height:90px;
+            left:55px;
+            top:60px;
+        }
+
+        .horizontal{
+            position:absolute;
+            background-color:white;
+            height:40px;
+            width:90px;
+            left:30px;
+            top:85px;
+        }
+      
+        .dpad:hover .vertical, .dpad:hover .horizontal{
+          background-color:#fae300;
+          cursor:pointer;
+        }
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
