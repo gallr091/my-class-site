@@ -59,7 +59,6 @@ body {
     
     #wrapper:hover{
       animation:pulse 1s infinite;
-      cursor:pointer;
     }
     
     #pulsingheart { 
@@ -265,7 +264,7 @@ body {
           font-family: "salbabida-sans-pro", sans-serif;
           font-weight: 400;
           font-style: normal;
-          left:122px;
+          left:130px;
           top:92px;
         }
         
@@ -311,8 +310,6 @@ body {
           font-family: "salbabida-sans-pro", sans-serif;
           font-weight: 400;
           font-style: normal;
-          top:143px;
-          left:428px;
         }
 
     /* CANDY LEFT */
@@ -358,7 +355,6 @@ body {
 
     .candy1:hover{
       animation: wobble1 0.5s;
-      cursor:pointer;
     }
 
     @keyframes wobble1{
@@ -464,7 +460,7 @@ body {
       font-style: normal;
       color:#f759ba;
       position:absolute;
-      top:500px;
+      top:495px;
       left:40px;
       font-size:30px;
     }
@@ -491,7 +487,7 @@ body {
       font-style: normal;
       color:#f759ba;
       position:absolute;
-      top:550px;
+      top:545px;
       right:40px;
       font-size:30px;
     }
@@ -518,7 +514,7 @@ body {
       font-style: normal;
       color:#f759ba;
       position:absolute;
-      top:600px;
+      top:595px;
       left:40px;
       font-size:30px;
     }
@@ -537,22 +533,22 @@ body {
     .border1{
       color:#f759ba;
       position:absolute;
-      top:515px;
-      left:255px;
+      top:517px;
+      left:250px;
     }
 
     .border2{
       color:#f759ba;
       position:absolute;
-      top:562px;
+      top:567px;
       left:45px;
     }
 
     .border3{
       color:#f759ba;
       position:absolute;
-      top:615px;
-      left:260px;
+      top:617px;
+      left:255px;
     }
 
     /* PEPPERMINT */
@@ -597,3 +593,4 @@ body {
         animation-timing-function: ease-in;
       }
     }
+    
