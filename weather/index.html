@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>WeatherScope</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <style>
+              @import url("https://use.typekit.net/igb2fjc.css");
+              @import url('https://fonts.googleapis.com/css2?family=Forum&family=Martian+Mono:wght@200&family=Pinyon+Script&family=UnifrakturCook:wght@700&display=swap');
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <header>
+        <h2>WeatherScope</h2>
+        <nav>
+            <a href="#">Today</a>
+            <a href="#">Hourly</a>
+            <a href="#">Daily</a>
+            <a href="#">Maps & Radar</a>
+            <a href="#">Air Quality</a>
+            <a href="#">News</a>
+            <a href="#">More</a>
+        </nav>
+        <div class="location-top"><nav>Manila, Philippines</nav></div>
+        </header>
+
+        <section class="search">
+            <input type="text" class="search-term" placeholder="Search Location">
+            <input type="submit" name="submit" class="search-button" value="Search">
+              <i class="fa fa-search"></i>
+           </button>
+        </section>
+
+        <section class="forecast-today">
+            <h1>It's raining.</h1>
+            <h4>29°C | ↑32°C ↓26°C ••••••••••••••••••••••• Thu 10.12.23</h4>            
+        </section>
+
+        <div class="cloud-container">
+        <div id="cloud">
+            <div class="rain">
+              <div class="drop d1"></div>
+              <div class="drop d2"></div>
+              <div class="drop d3"></div>
+              <div class="drop d4"></div>
+              <div class="drop d5"></div>
+              <div class="drop d6"></div>
+              <div class="drop d7"></div>
+              <div class="drop d8"></div>
+              <div class="drop d9"></div>
+              <div class="drop d10"></div>
+              <div class="drop d11"></div>
+              <div class="drop d12"></div>
+              <div class="drop d13"></div>
+              <div class="drop d14"></div>
+              <div class="drop d15"></div>
+            </div>
+          </div>
+          </div>
+
+        <section class="daily-forecast">
+            <h2>Daily Forecast</h2>
+            <h6>Precipitation: 70% | Humidity: 76% | Wind: 10 km/h</h6>
+            <div class="forecast-containers">
+            <div class="friday">
+                <h3>Fri 10.13</h3>
+                <h5>↑32°C ↓26°C</h5>
+                <h4>Scattered Thunderstorms</h4>
+                <div class="bolt1"></div>
+            </div>
+            <div class="saturday">
+                <h3>Sat 10.14</h3>
+                <h5>↑32°C ↓25°C</h5>
+                <h4>Scattered Thunderstorms</h4>
+                <div class="bolt2"></div>
+            </div>
+            <div class="sunday">
+                <h3>Sun 10.15</h3>
+                <h5>↑32°C ↓25°C</h5>
+                <h4>Scattered Thunderstorms</h4>
+                <div class="bolt3"></div>
+            </div>
+            <div class="monday">
+                <div class="mon-container"></div>
+                <h3>Mon 10.16</h3>
+                <h5>↑32°C ↓25°C</h5>
+                <h4>Cloudy</h4>
+                <div class="cloud1"></div>
+            </div>
+            <div class="tuesday">
+                <h3>Tue 10.17</h3>
+                <h5>↑31°C ↓25°C</h5>
+                <h4>Cloudy</h4>
+                <div class="cloud2"></div>
+            </div>
+            <div class="wednesday">
+                <h3>Wed 10.18</h3>
+                <h5>↑31°C ↓24°C</h5>
+                <h4>Cloudy</h4>
+                <div class="cloud3"></div>
+            </div>
+        </div>
+        <h7>→</h7>
+        </section>
+
+        <div class="temp-time">
+            <h2>Now (10 AM)</h2>
+        </div>
+        <div class="scroll">
+            <div class="m-scroll">
+              <span>29°C</span>
+              <span>•</span>
+              <span>84°F</span>
+              <span>•</span>
+              <span>29°C</span>
+              <span>•</span>
+              <span>84°F</span>
+              <span>•</span>
+              <span>29°C</span>
+              <span>•</span>
+              <span>84°F</span>
+              <span>•</span>
+              <span>29°C</span>
+              <span>•</span>
+              <span>84°F</span>
+              <span>•</span>
+              <span>29°C</span>
+              <span>•</span>
+              <span>84°F</span>
+              <span>•</span>
+              <span>29°C</span>
+              <span>•</span>
+              <span>84°F</span>
+              <span>•</span>
+            </div>
+          </div>
+
+    <!-- MEDIA QUERIES  -->
+    
+    <div class="mobile-container">
+    
+    <section class="mobile-header">
+        <h3 class="time">10:00</h3>
+        <h3 class="city">Manila</h3>
+    </section>
+
+    <section class="temp">
+        <h3>It's raining.</h3>
+        <h2>29°C</h2>
+    </section>
+
+    <section class="high-low">
+        <h3>↑32°C ↓26°C</h3>
+    </section>
+
+    <section class="hourly-temp">
+        <div class="eleven-am">
+            <h4>11:00</h4>
+            <h4>30°C</h4>
+            <h4>Rain</h4>
+            <h4>Feels Like 35°C</h4>
+        </div>
+        <div class="twelve-pm">
+            <h4>12:00</h4>
+            <h4>30°C</h4>
+            <h4>Rain</h4>
+            <h4>Feels Like 35°C</h4>
+        </div>
+        <div class="one-pm">
+            <h4>13:00</h4>
+            <h4>31°C</h4>
+            <h4>Rain</h4>
+            <h4>Feels Like 37°C</h4>
+        </div>
+        <div class="two-pm">
+            <h4>14:00</h4>
+            <h4>32°C</h4>
+            <h4>Rain</h4>
+            <h4>Feels Like 37°C</h4>
+        </div>
+    </section>
+    </div>
+        <script src="" async defer></script>
+    </body>
+</html>
