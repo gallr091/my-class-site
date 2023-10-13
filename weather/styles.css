@@ -756,9 +756,10 @@ header nav a:hover, a:hover {
         font-style: normal;
         font-size:100px;
         font-weight:bold;
+        text-align:right;
         position:relative;
         top:130px;
-        left:270px;
+        margin-right:10px;
     }
 
     .temp h3{
