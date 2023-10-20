@@ -1,0 +1,182 @@
+body {
+    background-color: black;
+}
+
+
+#container {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 72vw;
+}
+
+.letter {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    margin-right: 5vw;
+}
+
+/* LETTER M */
+.m{
+    width:14vw;
+    height:24vh;  
+}
+
+.m .blank{
+    width:1vw;
+    height:1vw;
+}
+
+.m .fill{
+    background-color:violet;
+    width:1vw;
+    height:1vw;
+}
+
+/* LETTER A */
+.a{
+    width:9vw;
+    height:24vh;  
+}
+
+.a .blank{
+    width:1vw;
+    height:1vw;
+}
+
+.a .fill{
+    background-color:violet;
+    width:1vw;
+    height:1vw;
+}
+
+/* LETTER G */
+.g{
+    width:10vw;
+    height:24vh;  
+}
+
+.g .blank{
+    width:1vw;
+    height:1vw;
+}
+
+.g .fill{
+    background-color:violet;
+    width:1vw;
+    height:1vw;
+}
+
+/* LETTER I */
+.i{
+    width:7vw;
+    height:24vh;  
+}
+
+.i .blank{
+    width:1vw;
+    height:1vw;
+}
+
+.i .fill{
+    background-color:violet;
+    width:1vw;
+    height:1vw;
+}
+
+/* LETTER C */
+.c{
+    width:7vw;
+    height:24vh;  
+}
+
+.c .blank{
+    width:1vw;
+    height:1vw;
+}
+
+.c .fill{
+    background-color:violet;
+    width:1vw;
+    height:1vw;
+}
+
+/* HOVER */
+.fill:hover{
+    cursor:pointer;
+    border-radius: 50%;
+    box-shadow:
+    0 0 60px 30px #fff,  
+    0 0 100px 60px #f0f, 
+    0 0 140px 90px #0ff;
+    transition:ease 0.3s;
+}
+
+/* SPARKLE */
+#sparkle{
+    display:flex;
+    z-index:5;
+    position:absolute;
+    top: 15%;
+    left: 61%;
+    height:9vw;
+    animation: mover 2.5s infinite  alternate;
+    animation: mover 2.5s infinite  alternate;
+}
+
+@keyframes mover {
+    0% { transform: translateY(1rem); }
+    100% { transform: translateY(2.6rem); }
+}
+
+.sparkle1{
+    width:9vw;
+    display:flex;
+    flex-wrap:wrap;
+    opacity:1;
+}
+
+.sparkle1 .blank{
+    width:1vw;
+    height:1vw;
+}
+
+.cell{
+    background-color:violet;
+    width:1vw;
+    height:1vw;
+}
+
+.celldark{
+    background-color: #9653bd;    
+    width:1vw;
+    height:1vw;
+}
+
+.sparkle2{
+    display:flex;
+    width:9vw;
+    opacity:0;
+    flex-wrap:wrap;
+    position:relative;
+    right:50%;
+}
+
+.sparkle2 .blank{
+    width:1vw;
+    height:1vw;
+}
+
+#sparkle:hover .sparkle1{
+    cursor:pointer;
+    opacity:0;
+}
+
+#sparkle:hover .sparkle2{
+    cursor:pointer;
+    opacity:1;
+}
+
