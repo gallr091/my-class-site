@@ -1,0 +1,38 @@
+#cls-1 {
+    fill: #050606;
+    mix-blend-mode: multiply;
+    transition: 3s ease-in-out;
+      }
+
+#cls-2 {
+    fill: #050606;
+    mix-blend-mode: multiply;
+    transition: 3s ease-in;
+      }
+
+
+#cls-3 {
+     fill: #ffc915;
+     mix-blend-mode: multiply;
+     transition: 3s ease-in;
+      }
+
+#cls-4 {
+     fill: #c53e27;
+     mix-blend-mode: multiply;
+     transition: 3s ease-in;
+      }
+
+#cls-5 {
+     fill: #2e5995;
+     mix-blend-mode: multiply;
+    transition: 3s ease-in;
+      }
+/* #cls-6 {
+     fill: #c53f27;
+     mix-blend-mode: multiply;
+      }
+
+#cls-7 {
+        fill: #ffca15;
+      } */
