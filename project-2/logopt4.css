@@ -1,0 +1,166 @@
+#menu {
+    background-color:lightgrey;
+    margin: 5px;
+    height:50%;
+    width:15%;
+    padding: 10px 10px 10px 10px;
+    border-radius:10px;
+  }
+  
+  /* BUTTONS */
+    #button1, #button2, #button3, #button4 {
+      margin: 10px;
+      background-color: #f1f1f1;
+      border: none;
+      color: #1d1d1d;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-family: Helvetica;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius:10px;
+    }
+  
+  #button5 {
+      width: 100px;
+      height: 40px;
+      margin: 10px;
+      background-color: #f1f1f1;
+      border: none;
+      color: #1d1d1d;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-family: Helvetica;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius:10px;
+  }
+  
+  /* COLOR BUTTONS */
+  p{
+    font-family: Helvetica;
+    text-transform: uppercase;
+    font-weight: 200;
+      font-style: normal;
+      font-size: 12px;
+      cursor: pointer;
+  }
+          button {
+              cursor: pointer;
+              width: 30px;
+              height: 30px;
+              margin: 5px;
+              border-style: solid;
+              border-width: 1px;
+              border-color: #F7F7F7;
+              border-radius: 50%;
+          }
+  
+          #btnChangeShipColor1 { background-color: #FFC915; } 
+          #btnChangeShipColor2 { background-color: #050606; } 
+          #btnChangeShipColor3 { background-color: #C53E27; }
+          #btnChangeShipOutline { background-color: transparent; border: 2px solid black; }
+  
+          #btnChangeChimneyColor1 { background-color: #FFC915; } 
+          #btnChangeChimneyColor2 { background-color: #050606; } 
+          #btnChangeChimneyColor3 { background-color: #C53E27; }
+          #btnChangeChimneyOutline { background-color: transparent; border: 2px solid black; }
+  
+  
+          #btnChangeFloatieColor1 { background-color: #FFC915; }
+          #btnChangeFloatieColor2 { background-color: #050606; } 
+          #btnChangeFloatieColor3 { background-color: #C53E27; }
+          #btnChangeFloatieOutline { background-color: transparent; border: 2px solid black; } 
+  
+  
+          #btnChangeStarColor1 { background-color: #FFC915; } 
+          #btnChangeStarColor2 { background-color: #050606; } 
+          #btnChangeStarColor3 { background-color: #C53E27; }
+          #btnChangeStarOutline { background-color: transparent; border: 2px solid black; } 
+  
+  
+  /* LOGO SVGs */
+  #container {
+    position: absolute;
+    width:50%;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    background-color: white;
+  }
+    
+    .cls-1 {
+      fill: #ffc814;
+      transition: 3s ease-in;
+      mix-blend-mode: multiply;
+        }
+  
+    .cls-2 {
+      fill: #c43d27;
+      transition: 3s ease-in;
+      mix-blend-mode: multiply;
+        }
+  
+    .cls-3 {
+      fill: #1a1a1a;
+      transition: 3s ease-in;
+      mix-blend-mode: multiply;
+        }
+  
+    .cls-4 {
+      fill: #c43f27;
+      transition: 3s ease-in;
+      mix-blend-mode: multiply;
+        }
+  
+    .cls-5 {
+      fill: #ffc913;
+      transition: 3s ease-in;
+      mix-blend-mode: multiply;
+        }
+    
+  #boat{
+      transform: translate(20%, 25%) scale(0.5);
+      transition: 2s ease-in;
+      mix-blend-mode: multiply;
+    }
+    
+    #chimney1, #chimney2, #chimney3 {
+      transform: translate(20%, 25%) scale(0.5);
+      mix-blend-mode: multiply;
+      transition: 2s ease-in;
+    }
+    
+    #floatie{
+      transform: translate(20%, 25%) scale(0.5) rotate(0deg);
+      mix-blend-mode: multiply;
+      transition: 2s ease-in;
+    }
+  
+     #star{
+      transform-origin:center;
+      transform: translate(20%, 5%) rotate(320deg) scale(0.5);
+      transition: 2s ease-in;
+      mix-blend-mode: multiply;
+    }
+  
+  #wordmark{
+  font-family: "anisette-std", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  position: absolute;
+  bottom: 25%;
+  left: 60%;
+  cursor: grab;
+  }

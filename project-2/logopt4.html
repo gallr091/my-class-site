@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Titanic Historical Society</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="logopt4.css">
+        <style>
+            @import url("https://use.typekit.net/qki1zzr.css");
+          </style>
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- MAIN BUTTONS -->
+        <div id= "menu"> <input type="button" id="button1" value="Random Position" onclick="changePosition()"><br>
+        <input type="button" id="button2" value="Random Colors" onclick="changeColors()"><br>
+        <input type="button" id="button3" value="Randomize All" onclick="randomizeAll()"><br>
+        <button id="button5"> Animate </button><br>
+        <input type="button" id="button4" value="Show/Hide Text" onclick="toggleWordmark()"><br>
+    
+    
+        <!-- COLOR CHANGE BUTTONS -->
+        <p>Change ship color</p>
+        <button id="btnChangeShipColor1"></button>
+        <button id="btnChangeShipColor2"></button>
+        <button id="btnChangeShipColor3"></button>
+        <button id="btnChangeShipOutline"></button>
+        
+        <p>Change chimney color</p>
+        <button id="btnChangeChimneyColor1"></button>
+        <button id="btnChangeChimneyColor2"></button>
+        <button id="btnChangeChimneyColor3"></button>
+        <button id="btnChangeChimneyOutline"></button><br>
+        
+        <p>Change ring buoy color</p>
+        <button id="btnChangeFloatieColor1"></button>
+        <button id="btnChangeFloatieColor2"></button>
+        <button id="btnChangeFloatieColor3"></button>
+        <button id="btnChangeFloatieOutline"></button><br>
+        
+        <p>Change star color</p>
+        <button id="btnChangeStarColor1"></button>
+        <button id="btnChangeStarColor2"></button>
+        <button id="btnChangeStarColor3"></button>
+        <button id="btnChangeStarOutline"></button><br>
+        
+        </div>
+        
+
+        <!---- LOGO CONTAINER --->
+        <div id="container">
+        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630.29 656.11">
+        <path id="boat" path class="cls-3" d="m.52,416.39L627.65,30.11s20.96,174.86-68.31,276.06c-67.94,77.01-420.97,311.69-420.97,311.69-14.24-12.24-42.34-40-55.5-84.61-6.04-20.47-7.26-38.84-6.95-52.8-4.3.97-26.85,5.6-47.94-8.34C-.5,453.29.44,418.29.52,416.39Z"/>
+        <path id="chimney1" path class="cls-5" d="m50.2,174.18c1.21-4.62,4.13-13.04,11.55-21.56,8.76-10.06,19.07-14.8,24.01-16.74l108.73,128.14-39.67,27.4-104.61-117.24"/>
+        <polygon id= "chimney2" polygon class="cls-1" points="122.35 112.97 169.78 70.55 250.72 228.09 211.19 253.29 122.35 112.97"/>
+        <polygon id="chimney3" polygon class="cls-1" points="183.54 65.96 218.05 30.11 335.8 163.8 295.64 203.19 183.54 65.96"/>
+        <path id="floatie"  path class="cls-2" d="m346.2,520.55l42.17-48.6c-23.79-16.51-54.48-22.68-84.55-14.29-15.58,4.35-29.26,12.11-40.49,22.27l48.86,42.38c2.66-1.55,5.55-2.77,8.65-3.64,8.76-2.44,17.69-1.56,25.37,1.89Zm81.8,7.12c-4.75-17.03-13.57-31.78-25.15-43.53l-41.88,48.25c2.69,3.57,4.77,7.72,6.05,12.29,2.31,8.27,1.67,16.66-1.32,24.04l48.82,42.36c15.89-23.62,21.72-53.82,13.47-83.4Zm-25.45,98.05l-48.15-41.74c-3.84,3.1-8.36,5.48-13.42,6.89-9.77,2.72-19.71,1.32-27.96-3.2l-41.87,48.27c24.1,17.73,55.82,24.59,86.85,15.94,17.49-4.88,32.64-14.09,44.56-26.16Zm-103.36-50.99c-1.9-3.01-3.38-6.33-4.38-9.92-2.85-10.23-1.17-20.67,3.87-29.18l-48.12-41.75c-18.33,24.24-25.53,56.44-16.75,87.94,4.48,16.07,12.61,30.13,23.22,41.53l42.16-48.63Z"/>
+        <path id="star" path class="cls-4" d="m528.43,158.11l-24.39-30.34c-2.1-2.61-5.35-4.02-8.7-3.78l-38.82,2.89c-8.42.63-13.9-8.67-9.28-15.74l21.32-32.57c1.84-2.81,2.17-6.33.9-9.44l-14.75-36.03c-3.2-7.81,3.95-15.9,12.1-13.69l37.56,10.21c3.24.88,6.7.11,9.25-2.06l29.71-25.16c6.44-5.46,16.34-1.16,16.76,7.28l1.9,38.88c.16,3.35,1.96,6.4,4.82,8.17l33.11,20.48c7.18,4.44,6.15,15.19-1.74,18.18l-36.39,13.82c-3.13,1.19-5.48,3.85-6.28,7.1l-9.24,37.81c-2.01,8.2-12.54,10.54-17.83,3.96Z"/>
+        </svg>
+        
+        <div id="wordmark">
+        <div id="wordmarkheader" title="Drag me!">Titanic<br>Historical<br>Society</div>
+        </div>
+        </div>
+
+        <script src="logopt4.js" async defer></script>
+    </body>
+</html>
