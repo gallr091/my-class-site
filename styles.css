@@ -96,15 +96,15 @@ body{
 
 
 /* FOLDERS */
-
-  .folder-e1a:hover, .folder-e1b:hover, .folder-e2:hover, .folder-p1a:hover, .folder-p1b:hover{
-    cursor:ne-resize;
-  }
   
   .folder-e1a{
     position:absolute;
     left:600px;
     top:120px;
+  }
+
+  .folder-e1a:hover, .folder-e1b:hover, .folder-e2:hover, .folder-p1a:hover, .folder-p1b:hover{
+    cursor:pointer;
   }
 
   .folder-e1b{
@@ -139,15 +139,35 @@ body{
     padding-left:15px;
   }
 
-.folder-e3{
+  .folder-e3{
     position:absolute;
     left:950px;
     top:400px;
   }
 
-.folder-e4{
+  .folder-e4{
     position:absolute;
     left:1050px;
     top:320px;
   }
+
+  .folder-p2a{
+    position:absolute;
+    left:1150px;
+    top:200px;
+  }
+  .folder-p2a-caption{
+    padding-left:15px;
+  }
+
+  .folder-p2b{
+    position:absolute;
+    left:1150px;
+    top:490px;
+  }
+  .folder-p2b-caption{
+    padding-left:15px;
+  }
+
+
 
