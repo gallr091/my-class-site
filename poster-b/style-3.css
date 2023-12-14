@@ -4,6 +4,32 @@ body {
     background: linear-gradient(90deg, rgba(67,168,153,1) 0%, rgba(143,236,191,1) 10%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 80%, rgba(143,236,191,1) 90%, rgba(67,168,153,1) 100%);
 }
 
+.otherposters{
+  font-family:'Martian Mono', monospace;
+  font-size:15px;
+  position: relative;
+  width: 95%;
+  height: 0vh;
+  display:flex;
+  margin-left:2vw;
+  margin-right:3vw;
+  justify-content:space-between;
+}
+
+a {
+color: #43a899;
+text-decoration: none;
+}
+
+a:visited {
+color: darkcyan;
+}
+
+a:hover {
+color: lightblue;
+mix-blend-mode: screen;
+}
+
  .container {
     background: #43a899;
     border:5px dashed white;
