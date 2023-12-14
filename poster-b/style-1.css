@@ -41,11 +41,11 @@ a:hover {
         margin-top: calc(50vh - 350px);
         position:relative;
         transition: .5s;
-        transform: scale(.8);
+        transform: scale(.9);
     }
 
     .container:hover{
-      transform: scale(0.9);
+      transform: scale(1.0);
       box-shadow: 0 0 30px 10px red;
     }
     
