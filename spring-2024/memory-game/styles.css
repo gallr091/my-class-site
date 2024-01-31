@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    background: #037c6e;
+}
+
+.wrapper{
+    padding: 15px;
+    height: 550px;
+    width: 550px;
+    background: #FAF9F6;
+    border-radius: 10px; 
+}
+
+.cards, .card, .view{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.cards{
+  cursor: pointer; 
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cards .card{
+    cursor: pointer;
+    position: relative;
+    perspective: 800px;
+    transform-style: preserve-3d;
+    height: calc(100% / 4 - 10px);
+    width: calc(100% / 4 - 10px);
+}
+
+.card.shake{
+    animation: shake 0.35s ease-in-out;
+}
+
+@keyframes shake{
+    0%, 100%{
+        transform: translateX(0);
+    }
+    20%{
+        transform: translateX(-13px);
+    }
+    40%{
+        transform: translateX(13px);
+    }
+    60%{
+        transform: translateX(-8px);
+    }
+    80%{
+        transform: translateX(8px);
+    }
+}
+
+.cards .card .view{
+    cursor:pointer;
+    width: 100%;
+    height: 100%;
+    user-select:none;
+    pointer-events:none;
+    position: absolute;
+    perspective: 800px;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    background: white;
+    border-radius: 7px;
+    transition:transform 0.25s linear;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card .front-view span{
+    font-size: 60px;
+    color: #037c6e; 
+}
+
+.card .back-view{
+    transform: rotateY(-180deg);
+}
+
+.card .back-view img{
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.card.flip .back-view{
+    transform: rotateY(0);
+}
+
+.card.flip .front-view{
+    transform: rotateY(180deg);
+}
+
